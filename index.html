@@ -6,17 +6,32 @@
 
 <body>
 <font face=arial>
-<center><h1>SawSing: A DDSP-based Singing Vocoder via Subtractive Sawtooth Waveform Synthesis</h1></center>
+<center><h1>DDSP-based Singing Vocoders: A New Subtractive-based Synthesizer and A Comprehensive Evaluation</h1></center>
 
 <div class="">
-<p>The following audio files in Part I and II are the ones used in the figures and the subjective evaluation in our ISMIR2022 submission. <!-- Supplementary materials including training DDSP-based vocoders on 48k audios and singing voice synthesis using Tacotron2 are displayed in Part III. --></p>
+<p>The following audio files in Part I and II are the ones used in the figures and the subjective evaluation in our ISMIR2022 submission. <!-- Supplementary materials including training DDSP-based vocoders on 48k audios and singing voice synthesis using Tacotron2 are displayed in Part III. -->Post-processed audios of removing buzzing effects are displayed in Part III.</p>
 <p><b>Note: </b>Please kindly make sure that your web browser supports the format of wav audio. The numbers in the following table specify the first browser version that fully supports the audio element.  And, we suggest hearing the audio files with a headset.</p>
 <p><font color="DarkRed"><b>It may take some time to load the audios, please wait for a while if the playback buffers are not yet finished.</b></font></p>
 <center><figure>
 <img src="https://github.com/furongyang/audio-icassp/blob/main/browser.PNG?raw=true"
          alt="web browser supports"style="width:45%"></figure></center></div><hr>
 <!-- ------------------------------------------------------------------------- -->
-<h1><font color="DarkBlue">Part I. Audios of Figures in the Paper</font></h1><br/>
+<h1><font color="DarkBlue">Content</font></h1>
+<ol>
+	<li style="font-size:18px"><a href="#partI">Part I. Audios of Figures in the Paper</a></li>
+	<hr style="height:5px; visibility:hidden;" />
+	<li style="font-size:18px"><a href="#partII">Part II. Audios of the Subjective Evaluation</a></li>
+	<ul>
+		<hr style="height:0.05pt; visibility:hidden;" />
+		<li style="font-size:15px"><a href="#regular">Regular: 3h data, well-trained</a></li>
+		<li style="font-size:15px"><a href="#limit">Resource-limited: 3min data, 3h training</a></li>
+	</ul>
+	<hr style="height:5px; visibility:hidden;" />
+	<li style="font-size:18px"><a href="#partIII">Part III. Post-processed Audios</a></li>
+</ol>
+
+<hr>
+<h1 id="partI"><font color="DarkBlue">Part I. Audios of Figures in the Paper</font></h1><br/>
 <center><h2>These are the audio files of the spectrograms displayed in Figure 1</h2>
 <!-- <figure><img src="https://github.com/expaudio/demo/blob/master/p1.PNG?raw=true"alt="web browser supports"style="width:50%;float:left;margin-right:4px"></figure>
 <figure><img src="https://github.com/expaudio/demo/blob/master/p2.PNG?raw=true"alt="web browser supports"style="width:47%"></figure> -->
@@ -52,9 +67,9 @@ SawSing (<I>harmonic-plus-noise</I>)</h3>
 <p style="line-height:3.5em;"></p><hr></center>
 <!-- ------------------------------------------------------------------------- -->
 
-<h1><font color="DarkBlue">Part II. Audios of the Subjective Evaluation</font></h1><br/>
+<h1 id="partII"><font color="DarkBlue">Part II. Audios of the Subjective Evaluation</font></h1><br/>
 <div class="feature">
-<center><h1><font color="DarkRed">Regular: 3h data, well-trained</font></h1>
+<center><h1 id="regular"><font color="DarkRed">Regular: 3h data, well-trained</font></h1>
 <table border=1>
 
 <tr><td></td>
@@ -322,7 +337,7 @@ SawSing (<I>harmonic-plus-noise</I>)</h3>
 <!-- ------------------------------------------------------------------------- -->
 
 <div class="feature">
-<center><h1><font color="DarkRed">Resource-limited: 3min data, 3h training</font></h1></center>
+<center><h1 id="limit"><font color="DarkRed">Resource-limited: 3min data, 3h training</font></h1></center>
 <table border=1>
 
 <tr><td></td>
@@ -586,6 +601,9 @@ SawSing (<I>harmonic-plus-noise</I>)</h3>
 
 </table><br/><br/>
 
+<h1 id="partIII"><font color="DarkBlue">Part III. Post-processed Audios</font></h1>
+<p>UNDER CONSTRUCTION</p>
+In HiFiSinger, they do this by extracting F0 using Parselmouth and setting UV when f0<3. During unvoiced portions, the harmonic synthesizer amplitudes are set to zero. 
 
 </font></body>
 </html>
