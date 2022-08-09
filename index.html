@@ -4,12 +4,12 @@
 <title>Audio Demos</title>
 </head>
 
-<body>
+<body style="margin:5%">
 <font face=arial>
 <center><h1>DDSP-based Singing Vocoders: A New Subtractive-based Synthesizer and A Comprehensive Evaluation</h1></center>
 
 <div class="">
-<p>The following audio files in Part I and II are the ones used in the figures and the subjective evaluation in our ISMIR2022 submission. <!-- Supplementary materials including training DDSP-based vocoders on 48k audios and singing voice synthesis using Tacotron2 are displayed in Part III. -->Post-processed audios of removing buzzing effects are displayed in Part III.</p>
+<p>The paper is going to be published at ISMIR'22. Audio files in Part I and II are the ones used in the figures and the subjective evaluation in our paper. </p>
 <p><b>Note: </b>Please kindly make sure that your web browser supports the format of wav audio. The numbers in the following table specify the first browser version that fully supports the audio element.  And, we suggest hearing the audio files with a headset.</p>
 <p><font color="DarkRed"><b>It may take some time to load the audios, please wait for a while if the playback buffers are not yet finished.</b></font></p>
 <center><figure>
@@ -17,18 +17,17 @@
          alt="web browser supports"style="width:45%"></figure></center></div><hr>
 <!-- ------------------------------------------------------------------------- -->
 <h1><font color="DarkBlue">Content</font></h1>
-<ol>
+<ul>
 	<li style="font-size:18px"><a href="#partI">Part I. Audios of Figures in the Paper</a></li>
 	<hr style="height:5px; visibility:hidden;" />
 	<li style="font-size:18px"><a href="#partII">Part II. Audios of the Subjective Evaluation</a></li>
 	<ul>
 		<hr style="height:0.05pt; visibility:hidden;" />
-		<li style="font-size:15px"><a href="#regular">Regular: 3h data, well-trained</a></li>
-		<li style="font-size:15px"><a href="#limit">Resource-limited: 3min data, 3h training</a></li>
+		<li style="font-size:16px"><a href="#regular">Regular: 3h data, well-trained</a></li>
+		<hr style="height:0.05pt; visibility:hidden;" />
+		<li style="font-size:16px"><a href="#limit">Resource-limited: 3min data, 3h training</a></li>
 	</ul>
-	<hr style="height:5px; visibility:hidden;" />
-	<li style="font-size:18px"><a href="#partIII">Part III. Post-processed Audios</a></li>
-</ol>
+</ul>
 
 <hr>
 <h1 id="partI"><font color="DarkBlue">Part I. Audios of Figures in the Paper</font></h1><br/>
@@ -53,11 +52,11 @@
 <!-- ------------------------------------------------------------------------- -->
 <center><h2>These are the audio files of the examples discussed in Figure 4</h2>
 <img src="https://github.com/ddspvocoder/ismir-demo/blob/master/buzzing.png?raw=true"alt="web browser supports"style="width:40%">
-<audio controls id="player" style="height:50px; width:300px;margin-bottom:305px">
+<audio controls id="player" style="height:50px; width:300px;margin-bottom:275px">
 <source src="fig4/addh.mp3"></audio>
-<audio controls id="player" style="height:50px; width:300px;margin-bottom:208px;margin-left:-300px"><source src="fig4/subh.mp3"></audio>
-<audio controls id="player" style="height:50px; width:300px;margin-bottom:111px;margin-left:-300px"><source src="fig4/addn.mp3"></audio>
-<audio controls id="player" style="height:50px; width:300px;margin-bottom:14px;margin-left:-300px"><source src="fig4/subn.mp3"></audio>
+<audio controls id="player" style="height:50px; width:300px;margin-bottom:190px;margin-left:-300px"><source src="fig4/subh.mp3"></audio>
+<audio controls id="player" style="height:50px; width:300px;margin-bottom:100px;margin-left:-300px"><source src="fig4/addn.mp3"></audio>
+<audio controls id="player" style="height:50px; width:300px;margin-bottom:10x`px;margin-left:-300px"><source src="fig4/subn.mp3"></audio>
 <div><br/><br/>
 
 <h3>DDSP-Add (<I>harmonic-plus-noise</I>) &emsp;  &emsp; &emsp; &emsp; &emsp; 
@@ -67,268 +66,299 @@ SawSing (<I>harmonic-plus-noise</I>)</h3>
 <p style="line-height:3.5em;"></p><hr></center>
 <!-- ------------------------------------------------------------------------- -->
 
-<h1 id="partII"><font color="DarkBlue">Part II. Audios of the Subjective Evaluation</font></h1><br/>
+<h1 id="partII"><font color="DarkBlue">Part II. Audios of the Subjective Evaluation</font></h1>
+<p style="font-size: 13.5pt"><b>Note:</b> The post-processed version of SawSing (de-buzzed) is not included in our user study (MOS).</p>
 <div class="feature">
 <center><h1 id="regular"><font color="DarkRed">Regular: 3h data, well-trained</font></h1>
 <table border=1>
 
 <tr><td></td>
-<td align="center"><b>female singer (f1)</b></td>
-<td align="center"><b>male singer (m1)</b></td></tr>
+<td align="center"><b style="font-size: 20px">female singer (f1)</b></td>
+<td align="center"><b style="font-size: 20px">male singer (m1)</b></td></tr>
 
-<tr><td align="center"><b>Recording</b></td>
+<tr><td align="center"><b style="font-size: 20px">Recording</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>Parallel WaveGAN (PWG)</b></td>
+<tr><td align="center"><b style="font-size: 20px">Parallel WaveGAN (PWG)</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-f1-full\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-f1-full\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-f1-full\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-m1-full\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-m1-full\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-m1-full\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>Hifi-GAN</b></td>
+<tr><td align="center"><b style="font-size: 20px">Hifi-GAN</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-f1-full\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-f1-full\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-f1-full\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-m1-full\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-m1-full\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-m1-full\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>FastDiff</b></td>
+<tr><td align="center"><b style="font-size: 20px">FastDiff</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-f1-full\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-f1-full\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-f1-full\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-m1-full\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-m1-full\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-m1-full\m1_104.mp3"></audio>
 </td>
 
 
 <!--  -->
 
-<tr><td align="center"><b>Neural Source Filter (NFS)</b></td>
+<tr><td align="center"><b style="font-size: 20px">Neural Source Filter (NFS)</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-f1-full\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-f1-full\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-f1-full\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-m1-full\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-m1-full\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-m1-full\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>Differentiable Wavetable Synthesizer (DWTS)</b></td>
+<tr><td align="center"><b style="font-size: 20px">Differentiable Wavetable Synthesizer (DWTS)</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-f1-full\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-f1-full\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-f1-full\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-m1-full\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-m1-full\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-m1-full\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>DDSP-Add</b></td>
+<tr><td align="center"><b style="font-size: 20px">DDSP-Add</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-f1-full\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-f1-full\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-f1-full\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-m1-full\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-m1-full\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-m1-full\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>SawSing</b></td>
+<tr><td align="center"><b style="font-size: 20px">SawSing</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-f1-full\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-f1-full\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-f1-full\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-m1-full\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-m1-full\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-m1-full\m1_104.mp3"></audio>
+</td>
+
+<tr><td align="center"><b style="font-size: 20px; color:DarkBlue">SawSing<BR>(De-buzzed)</b><BR>not included in MOS</td>
+<td><br/>
+
+<p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-f1-full\debuzz\f1_037.mp3"></audio>
+
+<p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-f1-full\debuzz\f1_142.mp3"></audio>
+
+<p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-f1-full\debuzz\f1_143.mp3"></audio>
+</td>
+
+<td><br/>
+<p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-m1-full\debuzz\m1_028.mp3"></audio>
+
+<p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-m1-full\debuzz\m1_073.mp3"></audio>
+
+<p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-m1-full\debuzz\m1_104.mp3"></audio>
 </td>
 
 </table></center></div><br/><br/>
@@ -341,269 +371,298 @@ SawSing (<I>harmonic-plus-noise</I>)</h3>
 <table border=1>
 
 <tr><td></td>
-<td align="center"><b>female singer (f1)</b></td>
-<td align="center"><b>male singer (m1)</b></td></tr>
+<td align="center"><b style="font-size: 20px">female singer (f1)</b></td>
+<td align="center"><b style="font-size: 20px">male singer (m1)</b></td></tr>
 
-<tr><td align="center"><b>Recording</b></td>
+<tr><td align="center"><b style="font-size: 20px">Recording</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\GT\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>Parallel WaveGAN (PWG)</b></td>
+<tr><td align="center"><b style="font-size: 20px">Parallel WaveGAN (PWG)</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-f1-3min\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-f1-3min\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-f1-3min\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-m1-3min\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-m1-3min\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\pwg\pwg-m1-3min\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>Hifi-GAN</b></td>
+<tr><td align="center"><b style="font-size: 20px">Hifi-GAN</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-f1-3min\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-f1-3min\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-f1-3min\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-m1-3min\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-m1-3min\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\hifigan\hifigan-m1-3min\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>FastDiff</b></td>
+<tr><td align="center"><b style="font-size: 20px">FastDiff</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-f1-3min\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-f1-3min\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-f1-3min\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-m1-3min\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-m1-3min\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\fastdiff\fastdiff-m1-3min\m1_104.mp3"></audio>
 </td>
 
 
 <!--  -->
 
-<tr><td align="center"><b>Neural Source Filter (NFS)</b></td>
+<tr><td align="center"><b style="font-size: 20px">Neural Source Filter (NFS)</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-f1-3min\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-f1-3min\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-f1-3min\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-m1-3min\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-m1-3min\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\nsf\nsf-m1-3min\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>Differentiable Wavetable Synthesizer (DWTS)</b></td>
+<tr><td align="center"><b style="font-size: 20px">Differentiable Wavetable Synthesizer (DWTS)</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-f1-3min\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-f1-3min\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-f1-3min\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-m1-3min\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-m1-3min\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\dws\dws-m1-3min\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>DDSP-Add</b></td>
+<tr><td align="center"><b style="font-size: 20px">DDSP-Add</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-f1-3min\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-f1-3min\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-f1-3min\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-m1-3min\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-m1-3min\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\ddsp-add\ddsp-add-m1-3min\m1_104.mp3"></audio>
 </td>
 
 <!--  -->
 
-<tr><td align="center"><b>SawSing</b></td>
+<tr><td align="center"><b style="font-size: 20px">SawSing</b></td>
 <td><br/>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-f1-3min\f1_037.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-f1-3min\f1_142.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-f1-3min\f1_143.mp3"></audio>
 </td>
 
 <td><br/>
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-m1-3min\m1_028.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-m1-3min\m1_073.mp3"></audio>
 
 <p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
-<audio controls id="player" style="height:50px; width:500px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
 <source src="test\saw\saw-m1-3min\m1_104.mp3"></audio>
+</td>
+
+<!--  -->
+
+<tr><td align="center"><b style="font-size: 20px; color:DarkBlue">SawSing<BR>(De-buzzed)</b><BR>not included in MOS</td>
+<td><br/>
+
+<p style="line-height:0.05em;margin-left:50px"><i>f1-test-song1</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-f1-3min\debuzz\f1_037.mp3"></audio>
+
+<p style="line-height:0.05em;margin-left:50px"><i>f1-test-song2</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-f1-3min\debuzz\f1_142.mp3"></audio>
+
+<p style="line-height:0.05em;margin-left:50px"><i>f1-test-song3</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-f1-3min\debuzz\f1_143.mp3"></audio>
+</td>
+
+<td><br/>
+<p style="line-height:0.05em;margin-left:50px"><i>m1-test-song1</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-m1-3min\debuzz\m1_028.mp3"></audio>
+
+<p style="line-height:0.05em;margin-left:50px"><i>m1-test-song2</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-m1-3min\debuzz\m1_073.mp3"></audio>
+
+<p style="line-height:0.05em;margin-left:50px"><i>m1-test-song3</i></p>
+<audio controls id="player" style="height:50px; width:400px;margin-bottom:10px;margin-left:25px;margin-right:25px">
+<source src="test\saw\saw-m1-3min\debuzz\m1_104.mp3"></audio>
 </td>
 
 </table><br/><br/>
 
-<h1 id="partIII"><font color="DarkBlue">Part III. Post-processed Audios</font></h1>
-<p>UNDER CONSTRUCTION</p>
-In HiFiSinger, they do this by extracting F0 using Parselmouth and setting UV when f0<3. During unvoiced portions, the harmonic synthesizer amplitudes are set to zero. 
 
 </font></body>
 </html>
